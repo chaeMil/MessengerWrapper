@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.frame {
+  -webkit-app-region: drag;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 36px;
+  background-color: #0084FF;
+}
+
+.button {
+  -webkit-app-region: no-drag;
+  position: fixed;
+  top: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  -webkit-filter: invert(0.9);
+}
+
+.close.left {
+  left: 5px;
+}
+
+.minimize.left {
+  left: 32px;
+}
+
+.maximize.left {
+  left: 64px;
+}
+
+.close.right {
+  right: 5px;
+}
+
+.minimize.right {
+  right: 32px;
+}
+
+.maximize.right {
+  right: 64px;
+}
+
+#webview {
+  background-color: white;
+  position: fixed;
+  top: 36px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 36px);
+}
